@@ -2,7 +2,7 @@ class Api::V1::AppointmentsController < ApplicationController
 	before_action :authorize_request
   
   def index
-    @appointments = Appointment.all
+    @appointments = Appointment.joins(:doctor, :user, appointment_slots: :slot).where(user_id: current_user.id).filter_appointments(params[:type]).select("appointments.*, slots.name AS sname, slots.start_time, doctors.name AS dname, users.name uname, users.email AS uemail")
   end
 
 	def create
