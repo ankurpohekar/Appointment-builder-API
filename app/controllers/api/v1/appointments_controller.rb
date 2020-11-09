@@ -11,7 +11,7 @@ class Api::V1::AppointmentsController < ApplicationController
     	@appoint =  Appointment.joins(:doctor, appointment_slots: :slot).select("appointments.*, slots.name AS sname, slots.start_time, doctors.name AS dname").find(appointment.id)
       @message = "appointment booked successfully"
     else
-    	render json: {error: appointment.errors.full_messages.join(", ")}
+    	render json: {error: appointment.errors.full_messages}
     end
 	end
 

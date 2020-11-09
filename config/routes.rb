@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       end
       resources :slots, only: [:index]
       resources :appointments
-      resources :doctors, only: [:index]
+      resources :doctors, only: [:index, :show]
     end
   end
 end
