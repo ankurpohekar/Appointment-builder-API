@@ -59,6 +59,7 @@ Things you may want to cover:
     },
     "message": "user signed up successfully"
   }
+
 	```
 
   ### `Sign in`
@@ -73,6 +74,7 @@ Things you may want to cover:
 				"password": "password"
 			}
 		}
+
     ```
 
     Response
@@ -85,4 +87,5 @@ Things you may want to cover:
         "token_expiery": "11-10-2020 08:29"
       }
     }
+    
     ```
