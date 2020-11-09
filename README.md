@@ -54,7 +54,9 @@ In the project directory
 ```
 ### `Sign in`
 `POST /api/v1/account/signin`
+
 `Request`
+
 ```json
 {
   "signin":{
@@ -75,7 +77,9 @@ In the project directory
 ```
 ### Get available appointment slots
 `GET /api/v1/slots`
+
 `Request`
+
 ```json
 {
   "slots": [
@@ -111,6 +115,7 @@ In the project directory
 `GET /api/v1/doctors`
 
 `Request`
+
 ```json
 {
   "doctors": [
@@ -131,7 +136,9 @@ In the project directory
 ```
 ### Create appointment
 `POST api/v1/appointments`
+
 `Request`
+
 ```json
 {
   "appointment":{
@@ -156,7 +163,9 @@ In the project directory
 ### Get appointment by day, week
 `GET /api/v1/appointments?type=<day or week>`
 you can pass `type` as a query parameter with values `day` or `week`
+
 `Response`
+
 ```json
 {
   "appointment": [
@@ -173,6 +182,8 @@ you can pass `type` as a query parameter with values `day` or `week`
 ```
 ### Get doctor specific appointments
 `GET api/v1/doctors/:id`
+
+`Response`
 ```json
 {
   "doctor": [
