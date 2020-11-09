@@ -5,25 +5,22 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby & Rails version
-###`rails 5.2.4`
-### `ruby 2.5.0`
+## Ruby Version
+* `ruby 2.5.0`
 
-* Database creation
-###`rake db create db:migrate db:seed`
+## Rails Version
+* `rails 5.2.4`
 
-* How to run the test suite
-```controller spec
-rspec spec/controllers/api/v1
-```
+## Clone repository
+* `git clone git@github.com:ankurpohekar/Appointment-builder.git`
 
-```model spec
-rspec spec/models/
-```
+##Database creation
+In the project directory, you can run:
 
-```All spec
-rspec spec/
-```
+*`rake db create db:migrate db:seed`
 
-* ...
-# Appointment-builder
+ ##How to run the test suite
+ * `rspec spec/controllers/api/v1` run all controller specs
+ * `rspec spec/models/` run all model specs
+ * `rspec spec/` run all specs
+
