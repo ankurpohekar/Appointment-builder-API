@@ -1,7 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
 Things you may want to cover:
 
@@ -16,11 +14,12 @@ Things you may want to cover:
 
 ## Database creation
 In the project directory, you can run:
-
-*`rake db create db:migrate db:seed`
+* `rake db create db:migrate db:seed`
 
  ## How to run the test suite
  * `rspec spec/controllers/api/v1` run all controller specs
  * `rspec spec/models/` run all model specs
  * `rspec spec/` run all specs
 
+## Code Coverage
+* `xdg-open coverage/index.html`
