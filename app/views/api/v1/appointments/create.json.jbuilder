@@ -1,3 +1,4 @@
+json.code 200
 json.message @message
 json.appointment do 
   json.id @appoint.id

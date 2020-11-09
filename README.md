@@ -44,12 +44,13 @@ In the project directory
 ```
 `Response`
 ```json
+"code": 200,
+"message": "user signed up successfully"
 {
   "signup": {
     "name": "Wick",
     "email": "test02@gmail.com"
  },
-  "message": "user signed up successfully"
 }
 ```
 ### `Sign in`
@@ -61,13 +62,14 @@ In the project directory
 {
   "signin":{
     "email": "test@gmail.com",
-	"password": "password"
+	  "password": "password"
 	}
 }
 ```
 `Response`
 ```json
-{
+{ 
+  "code": 200,
   "message": "user signed in successfully",
   "signin": {
     "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJle.....",
@@ -77,10 +79,12 @@ In the project directory
 ```
 ### Get available appointment slots
 `GET /api/v1/slots`
+List of available slots for appointment booking, users can pass slot `id` to book appointmnet within the particular slot
 
-`Request`
+`Response`
 
 ```json
+"code": 200,
 {
   "slots": [
       {
@@ -113,10 +117,12 @@ In the project directory
 ```
 ### Get Doctors list
 `GET /api/v1/doctors`
+List of doctors, users can pass doctor `id` to book appointmnet with doctor
 
-`Request`
+`Response`
 
 ```json
+"code": 200,
 {
   "doctors": [
     {
@@ -136,6 +142,7 @@ In the project directory
 ```
 ### Create appointment
 `POST api/v1/appointments`
+To book appointments, need to pass `ID` of `doctor` and `ID` of `slot` along with date of appointment
 
 `Request`
 
@@ -150,7 +157,8 @@ In the project directory
 ```
 `Response`
 ```json
-{
+{ 
+  "code": 200,
   "message": "appointment booked successfully",
   "appointment": {
     "id": 1,
@@ -167,7 +175,8 @@ you can pass `type` as a query parameter with values `day` or `week`
 `Response`
 
 ```json
-{
+{  
+  "code": 200,
   "appointment": [
     {
       "id": 1,
@@ -184,8 +193,10 @@ you can pass `type` as a query parameter with values `day` or `week`
 `GET api/v1/doctors/:id`
 
 `Response`
+
 ```json
-{
+{  
+  "code": 200,
   "doctor": [
     {
       "doctor": "Doctor-1",

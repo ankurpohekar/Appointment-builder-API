@@ -1,3 +1,4 @@
+json.code 200
 json.appointment @appointments.each do |appointment|
   json.id appointment.id
   json.name appointment.uname
