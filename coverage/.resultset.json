@@ -461,10 +461,10 @@
         "lines": [
           1,
           1,
-          10,
-          10,
-          10,
-          10,
+          12,
+          12,
+          12,
+          12,
           null,
           null
         ]
@@ -671,14 +671,32 @@
           null
         ]
       },
-      "/home/doboz/Documents/ANK/demo_sites/appointment_builder/app/models/slot.rb": {
+      "/home/doboz/Documents/ANK/demo_sites/appointment_builder/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
+          3,
+          null,
+          null,
+          2,
+          2,
+          2,
+          null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -691,7 +709,18 @@
           1,
           1,
           null,
-          9,
+          16,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/doboz/Documents/ANK/demo_sites/appointment_builder/app/models/slot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
           null,
           1,
           null
@@ -777,6 +806,6 @@
         ]
       }
     },
-    "timestamp": 1604912669
+    "timestamp": 1604916176
   }
 }
