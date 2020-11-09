@@ -68,7 +68,7 @@ In the project directory
 {
   "message": "user signed in successfully",
   "signin": {
-    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJle..,
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJle.....",
     "token_expiery": "11-10-2020 08:29"
    }
 }
