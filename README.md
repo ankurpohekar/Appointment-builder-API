@@ -36,7 +36,7 @@ Things you may want to cover:
   ### `Sign up`
   `http://localhost:3000/api/v1/account/signup`
   
-  `request`
+  Request
   
     ```json
     {
@@ -49,7 +49,7 @@ Things you may want to cover:
 		}
 		```
 	
-	`reponse`
+	Rreponse
 	
 	```json
 	{
@@ -64,7 +64,7 @@ Things you may want to cover:
   ### `Sign in`
    `http://localhost:3000/api/v1/account/signin`
 
-    `request`
+    Request
 
     ```json
 		{
@@ -75,7 +75,7 @@ Things you may want to cover:
 		}
     ```
 
-    `response`
+    Response
 
     ```json
     {
